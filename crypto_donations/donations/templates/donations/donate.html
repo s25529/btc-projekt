@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="{% static 'donate.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Wspomoz glodne koty!</h1>
+        </div>
+        <div class="content">
+            <img src="{% static 'glodny_kot.jpg' %}" alt="Glodny kot" class="donation-image">
+            <p class="description">Glodne koty wlamuja sie do mieszkan w poszukiwaniu jedzenia.<br> Pomoz nam uzbierac srodki abysmy mogli je nakarmic!</p>
+            <div class="donation-details">
+                <p><strong>Bitcoiny mozesz wplacac na ponizszy adres:</strong></p>
+                <p class="address">{{address}}</p>
+            </div>
+            <h2>Dziekujemy za kazda wplate! <br> Ponizej lista osob ktore postanowily pomoc:</h2>
+            <ol>
+                {% for donator in donators %}
+                <li>
+                    {{donator}}
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
