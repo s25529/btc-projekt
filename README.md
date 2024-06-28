@@ -1,6 +1,6 @@
 # About
 Fundraising site accepting donations in Bitcoin cryptocurrency. \
-On the bottom of the page, there is a list of donators in form of transactions id's displayed as ordered list. \
+On the bottom of the page, there is a list of donators in form of transactions ID's displayed as ordered list. \
 After making the transation on the displayed address, the list of donators increments.
 
 # Setup
